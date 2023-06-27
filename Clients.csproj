@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="StaticFiles\Fonts\SulphurPoint-Bold.ttf" />
+    <None Remove="StaticFiles\Fonts\SulphurPoint-Light.ttf" />
+    <None Remove="StaticFiles\Fonts\SulphurPoint-Regular.ttf" />
+    <None Remove="StaticFiles\Images\LogoClientsLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="DB\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="StaticFiles\Fonts\SulphurPoint-Bold.ttf" />
+    <Resource Include="StaticFiles\Fonts\SulphurPoint-Light.ttf" />
+    <Resource Include="StaticFiles\Fonts\SulphurPoint-Regular.ttf" />
+    <Resource Include="StaticFiles\Images\LogoClientsLogo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
