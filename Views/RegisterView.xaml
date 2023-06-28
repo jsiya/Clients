@@ -30,27 +30,27 @@
             </Button>
         </Grid>
         <Grid Grid.Row="1">
-            <TextBlock Style="{DynamicResource lightFontDesign}" Text="Name" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
+            <TextBlock  Text="Name" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4"/>
             <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="What is the name of the client?"/>
         </Grid>
         <Grid Grid.Row="2">
-            <TextBlock Style="{DynamicResource lightFontDesign}" Text="Surname" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
+            <TextBlock  Text="Surname" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4" />
             <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="What is the surname of the client?"/>
         </Grid>
         <Grid Grid.Row="3">
-            <TextBlock Style="{DynamicResource lightFontDesign}" Text="Number" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
+            <TextBlock  Text="Number" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4" />
             <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="What is the phone number of the client?"/>
         </Grid>
         <Grid Grid.Row="4">
-            <TextBlock Style="{DynamicResource lightFontDesign}" Text="Company" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
+            <TextBlock  Text="Company" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4"/>
             <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Which company does the person belong to?"/>
         </Grid>
         <Grid Grid.Row="5">
-            <TextBlock Style="{DynamicResource lightFontDesign}" Text="Place" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
+            <TextBlock  Text="Place" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4" />
             <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Where did he/she found me?"/>
         </Grid>
@@ -60,7 +60,7 @@
                 <RowDefinition Height="2.5*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <TextBlock Style="{DynamicResource lightFontDesign}" Text="Registration date" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
+                <TextBlock  Text="Registration date" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4" />
             </Grid>
             <Grid Grid.Row="1">
@@ -81,7 +81,7 @@
             </Grid>
         </Grid>
         <Grid Grid.Row="7">
-            <TextBlock Style="{DynamicResource lightFontDesign}" Text="How do I know him/her" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
+            <TextBlock  Text="How do I know him/her" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4" />
             <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Write how do you know him/her"/>
         </Grid>

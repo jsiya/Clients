@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "HtPAaXvp7jJdcalp+/xD9S8xlDmhpZ5Ff7WuxCG+Zov/0UJaUe2A9tcPl02+ledM4fC3zOcZrWEeQcVHBG69uA==",
+  "dgSpecHash": "0zhlZZ2Ha9jEI9PxPJP6Ayd/lFwJrE+JJJG/N8KJQ6dsuOJd5SNn96cvG30QcUggOf02/uXGc3Avl06Y3AP0nQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Siya\\source\\repos\\Clients\\Clients.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Siya\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FontAwesome.WPF 4.7.0.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "FontAwesome.WPF",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

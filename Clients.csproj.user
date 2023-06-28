@@ -10,6 +10,9 @@
     <Compile Update="UserControls\TextBox1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\AllClients.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ClientProfileView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -31,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControls\TextBox1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AllClients.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ClientProfileView.xaml">

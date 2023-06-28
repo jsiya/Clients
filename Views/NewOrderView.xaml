@@ -29,13 +29,13 @@
             </Button>
         </Grid>
         <Grid Grid.Row="1">
-            <TextBlock Style="{DynamicResource lightFontDesign}" Text="Name of the order" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 15"
+            <TextBlock  Text="Name of the order" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 15"
                        FontSize="14.4" />
             <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Type the order name same with the order blank"/>
 
         </Grid>
         <Grid Grid.Row="2">
-            <TextBlock Style="{DynamicResource lightFontDesign}" Text="Order quantity" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 15"
+            <TextBlock  Text="Order quantity" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 15"
                        FontSize="14.4" />
             <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="How many do you want?"/>
 
@@ -46,7 +46,7 @@
                 <RowDefinition Height="1.6*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <TextBlock Style="{DynamicResource lightFontDesign}" Text="Order opening date" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,14,0,0"
+                <TextBlock  Text="Order opening date" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,14,0,0"
                        FontSize="14.4" />
             </Grid>
             <Grid Grid.Row="1">
@@ -72,7 +72,7 @@
                 <RowDefinition Height="1.6*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <TextBlock Style="{DynamicResource lightFontDesign}" Text="Order delivery date" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,14,0,0"
+                <TextBlock  Text="Order delivery date" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,14,0,0"
                        FontSize="14.4" />
             </Grid>
             <Grid Grid.Row="1">

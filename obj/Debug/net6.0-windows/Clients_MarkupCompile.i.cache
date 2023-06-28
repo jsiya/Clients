@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Siya\source\repos\Clients\App.xaml
-71712346117
+8-41655289
 
-10-1191182767
-194-1617825143
-ResourceDictionaries\Styles.xaml;UserControls\TextBox1.xaml;Views\ClientProfileView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\NewOrderView.xaml;Views\RegisterView.xaml;
+2063581929
+195130251315
+ResourceDictionaries\Styles.xaml;UserControls\TextBox1.xaml;Views\AllClients.xaml;Views\ClientProfileView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\NewOrderView.xaml;Views\RegisterView.xaml;
 
-True
+False
 
