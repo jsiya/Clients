@@ -38,10 +38,10 @@
                     <Border Background="#3476E4" Width="11" Height="11" CornerRadius="6" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30,9">
                         <TextBlock Text="2" FontFamily="Stylish" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                     </Border>
-                    <fa:FontAwesome VerticalAlignment="Top" HorizontalAlignment="Right" Margin="11,8" Icon="Instagram"/>
+                    <fa:FontAwesome VerticalAlignment="Top" HorizontalAlignment="Right" Margin="11,8" Icon="Instagram" Foreground="#01133D"/>
                     <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,7" Width="84.6" Height="24.8">
                         <Button.Content>
-                            <TextBlock Text="more" FontSize="9.6"/>
+                            <TextBlock Text="more" FontSize="9.6" Foreground="White"/>
                         </Button.Content>
                     </Button>
                 </Grid>

@@ -20,14 +20,14 @@
         <Grid Grid.Row="1">
             <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="144" Width="268" FontSize="28.8" Margin="10">
                 <Button.Content>
-                    <TextBlock Text="create new client"/>
+                    <TextBlock Foreground="White" Text="create new client"/>
                 </Button.Content>
             </Button>
         </Grid>
         <Grid Grid.Row="2">
             <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="144" Width="268" FontSize="28.8" Margin="10">
                 <Button.Content>
-                    <TextBlock Text="all client" />
+                    <TextBlock Foreground="White" Text="all client" />
                 </Button.Content>
             </Button>
         </Grid>

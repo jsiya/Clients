@@ -38,3 +38,5 @@ C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\Views\AllClients.g.c
 C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\Views\AllClients.baml
 C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\UserControls\ClientInfoCard.g.cs
 C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\UserControls\ClientInfoCard.baml
+C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\UserControls\OrderInfoCard.g.cs
+C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\UserControls\OrderInfoCard.baml

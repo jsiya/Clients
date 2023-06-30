@@ -2,6 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style TargetType="TextBlock">
         <Setter Property="FontFamily" Value="\StaticFiles\Fonts\#Sulphur Point"/>
+        <Setter Property="Foreground" Value="#01133D"/>
     </Style>
     <Style x:Key="BtnStyle" TargetType="Button">
         <Setter Property="Background" Value="#01133D"/>

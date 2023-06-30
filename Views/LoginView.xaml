@@ -31,7 +31,11 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <Button Style="{DynamicResource BtnStyle}" Content="log in" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Width="268" />
+                <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Width="268" >
+                    <Button.Content>
+                        <TextBlock Text="log in" Foreground="White"/>
+                    </Button.Content>
+                </Button>
             </Grid>
             <Grid Grid.Row="1">
                 <TextBlock Text="Proudly created by Tunar Abuzar in 2021." FontSize="9.6" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">

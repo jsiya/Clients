@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clients.Views"
+        xmlns:userControls="clr-namespace:Clients.UserControls"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
         Title="ClientProfileView"  Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592">
@@ -23,48 +24,39 @@
             </Button>
         </Grid>
         <Grid Grid.Row="1">
-            
+            <TextBlock Text="Yunis Memmedov" FontSize="14.4" FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10"/>
+            <fa:FontAwesome Icon="Pencil" VerticalAlignment="Top" HorizontalAlignment="Right" Foreground="#01133D" Margin="0,10,10,0"/>
+            <fa:FontAwesome Icon="Building" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40" Foreground="#01133D"/>
+            <TextBlock Text="Indigo" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,38,0,0"/>
+            <TextBlock Text="Came from:" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,68,0,0"/>
+            <fa:FontAwesome Icon="Instagram" Foreground="#01133D" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="80, 72,0,0"/>
+            <fa:FontAwesome Icon="Phone" Height="15" Width="13" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#01133D" FontWeight="DemiBold" Margin="139,41,0,0" RenderTransformOrigin="0.402,0.514">
+                <fa:FontAwesome.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="2.548"/>
+                    </TransformGroup>
+                </fa:FontAwesome.RenderTransform>
+            </fa:FontAwesome>
+            <TextBlock Text="+994 55 555 55 55" FontSize="12" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="152,39,0,0"/>
+            <TextBlock Text="Registered:" FontSize="13" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="139,68,0,0"/>
+            <TextBlock Text="16.09.21" FontSize="13" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="210,68,0,0"/>
         </Grid>
         <Grid Grid.Row="2">
-            <ItemsControl VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 20">
+            <ItemsControl VerticalAlignment="Top" HorizontalAlignment="Center">
                 <ItemsControl.Template>
                     <ControlTemplate>
-                        <Border Margin="5" CornerRadius="2" Background="#FFFFFF" Width="268" Height="93.4">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1.6*"/>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
-                                <Grid Grid.Row="0">
-                                    <TextBlock Text="Display Akril (2.5mm) A5" FontSize="14.4" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="8, 0"/>
-                                    <fa:FontAwesome Icon="Pencil" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="30,0"/>
-                                    <Border Width="6.6" Height="6.6" CornerRadius="3.3" Background="#07DA42" HorizontalAlignment="Right"
-                                            VerticalAlignment="Center" Margin="10, 0"/>
-                                </Grid>
-                                <Grid Grid.Row="1">
-                                    <TextBlock Text="Order quantity:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
-                                    <TextBlock Text="500 pcs." FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="110, 0"/>
-                                </Grid>
-                                <Grid Grid.Row="2">
-                                    <TextBlock Text="Order day:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
-                                    <TextBlock Text="21.11.21" FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="110, 0"/>
-                                </Grid>
-                                <Grid Grid.Row="3">
-                                    <TextBlock Text="Delivery day:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
-                                    <TextBlock Text="30.11.21" FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="110, 0"/>
-                                </Grid>
-                            </Grid>
-                        </Border>
+                        <userControls:OrderInfoCard/>
                     </ControlTemplate>
                 </ItemsControl.Template>
             </ItemsControl>
             <Button Style="{DynamicResource BtnStyle}" Height="48.2" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10,50">
                 <Button.Content>
                     <Grid Width="45" Height="48">
-                        <TextBlock Text="+" FontSize="14.4" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="7"/>
-                        <TextBlock Text="new" FontSize="14.4" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="7"/>
+                        <TextBlock Foreground="White" Text="+" FontSize="14.4" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="7"/>
+                        <TextBlock Foreground="White" Text="new" FontSize="14.4" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="7"/>
                     </Grid>
                 </Button.Content>
             </Button>

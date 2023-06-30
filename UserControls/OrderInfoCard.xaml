@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Clients.UserControls.OrderInfoCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Clients.UserControls"
+             xmlns:fa="http://schemas.fontawesome.io/icons/"
+             mc:Ignorable="d" 
+             d:DesignHeight="120" d:DesignWidth="290">
+    <Grid>
+        <Border Margin="5" CornerRadius="2" Background="#FFFFFF" Width="268" Height="93.4">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.6*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <TextBlock Text="Display Akril (2.5mm) A5" FontSize="14.4" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="8, 0"/>
+                    <fa:FontAwesome Icon="Pencil" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="25,0"/>
+                    <Border Width="6.6" Height="6.6" CornerRadius="3.3" Background="#07DA42" HorizontalAlignment="Right"
+                                            VerticalAlignment="Center" Margin="10, 0"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <TextBlock Text="Order quantity:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
+                    <TextBlock Text="500 pcs." FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100, 0"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <TextBlock Text="Order day:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
+                    <TextBlock Text="21.11.21" FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="80, 0"/>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <TextBlock Text="Delivery day:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
+                    <TextBlock Text="30.11.21" FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="90, 0"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

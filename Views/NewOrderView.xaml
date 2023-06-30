@@ -93,7 +93,11 @@
             </Grid>
         </Grid>
         <Grid Grid.Row="5">
-            <Button Style="{DynamicResource BtnStyle}" Content="register" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Width="268" />
+            <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Width="268">
+                <Button.Content>
+                    <TextBlock Text="register" Foreground="White"/>
+                </Button.Content>
+            </Button>
         </Grid>
         <Grid Grid.Row="7">
             <TextBlock Text="Proudly created by Tunar Abuzar in 2021." FontSize="9.6" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
