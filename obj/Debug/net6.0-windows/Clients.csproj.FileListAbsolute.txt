@@ -36,3 +36,5 @@ C:\Users\Siya\source\repos\Clients\bin\Debug\net6.0-windows\FontAwesome.WPF.dll
 C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\Clients.csproj.CopyComplete
 C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\Views\AllClients.g.cs
 C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\Views\AllClients.baml
+C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\UserControls\ClientInfoCard.g.cs
+C:\Users\Siya\source\repos\Clients\obj\Debug\net6.0-windows\UserControls\ClientInfoCard.baml

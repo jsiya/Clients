@@ -5,9 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clients.Views"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:userControls="clr-namespace:Clients.UserControls"
         mc:Ignorable="d"
         Title="AllClients" Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592">
-    <Grid>
+    <Grid Background="#F4F8FB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="White">
+            <Image Source="/StaticFiles/Images/LogoClientsLogo.png" Width="43" Height="16.2" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <Button Width="35" Height="15" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Background="Transparent"
+                    BorderThickness="0">
+                <Button.Content>
+                    <TextBlock  Text="home" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Button.Content>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <ItemsControl VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 20">
+                    <ItemsControl.Template>
+                        <ControlTemplate>
+                            <userControls:ClientInfoCard/>
+                        </ControlTemplate>
+                    </ItemsControl.Template>
+                </ItemsControl>
+            </ScrollViewer>
+            
+            <Button Style="{DynamicResource BtnStyle}" Height="48.2" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10,50">
+                <Button.Content>
+                    <Grid Width="45" Height="48">
+                        <TextBlock Text="+" FontSize="14.4" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="7"/>
+                        <TextBlock Text="new" FontSize="14.4" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="7"/>
+                    </Grid>
+                </Button.Content>
+            </Button>
+            <TextBlock  Text="Proudly created by Tunar Abuzar in 2021." FontSize="9.6" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="#FF01133D" Opacity="0.22"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </Grid>
         
     </Grid>
 </Window>

@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="UserControls\ClientInfoCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\TextBox1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -31,6 +34,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="ResourceDictionaries\Styles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\ClientInfoCard.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControls\TextBox1.xaml">

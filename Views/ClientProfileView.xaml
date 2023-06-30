@@ -4,9 +4,76 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clients.Views"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
-        Title="ClientProfileView" Height="450" Width="800">
-    <Grid>
-        
+        Title="ClientProfileView"  Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592">
+    <Grid Background="#F4F8FB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="White">
+            <Image Source="/StaticFiles/Images/LogoClientsLogo.png" Width="43" Height="16.2" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <Button Width="35" Height="15" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Background="Transparent"
+                    BorderThickness="0">
+                <Button.Content>
+                    <TextBlock  Text="home" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Button.Content>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            
+        </Grid>
+        <Grid Grid.Row="2">
+            <ItemsControl VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 20">
+                <ItemsControl.Template>
+                    <ControlTemplate>
+                        <Border Margin="5" CornerRadius="2" Background="#FFFFFF" Width="268" Height="93.4">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1.6*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <TextBlock Text="Display Akril (2.5mm) A5" FontSize="14.4" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="8, 0"/>
+                                    <fa:FontAwesome Icon="Pencil" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="30,0"/>
+                                    <Border Width="6.6" Height="6.6" CornerRadius="3.3" Background="#07DA42" HorizontalAlignment="Right"
+                                            VerticalAlignment="Center" Margin="10, 0"/>
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <TextBlock Text="Order quantity:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
+                                    <TextBlock Text="500 pcs." FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="110, 0"/>
+                                </Grid>
+                                <Grid Grid.Row="2">
+                                    <TextBlock Text="Order day:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
+                                    <TextBlock Text="21.11.21" FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="110, 0"/>
+                                </Grid>
+                                <Grid Grid.Row="3">
+                                    <TextBlock Text="Delivery day:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
+                                    <TextBlock Text="30.11.21" FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="110, 0"/>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </ItemsControl.Template>
+            </ItemsControl>
+            <Button Style="{DynamicResource BtnStyle}" Height="48.2" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10,50">
+                <Button.Content>
+                    <Grid Width="45" Height="48">
+                        <TextBlock Text="+" FontSize="14.4" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="7"/>
+                        <TextBlock Text="new" FontSize="14.4" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="7"/>
+                    </Grid>
+                </Button.Content>
+            </Button>
+            <TextBlock  Text="Proudly created by Tunar Abuzar in 2021." FontSize="9.6" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="#FF01133D" Opacity="0.22"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </Grid>
+
     </Grid>
 </Window>
