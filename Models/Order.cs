@@ -13,4 +13,16 @@ public class Order
     public DateTime OpeningDate { get; set; }
     public DateTime DeliveryDate { get; set; }
     public bool IsDelivered { get; set; }
+    public Order() { }
+    public Order(Guid id, Guid clientId, Guid userId, string name, int quantity, DateTime openingDate, DateTime deliveryDate, bool isDelivered)
+    {
+        Id = id;
+        ClientId = clientId;
+        UserId = userId;
+        Name = name;
+        Quantity = quantity;
+        OpeningDate = openingDate;
+        DeliveryDate = deliveryDate;
+        IsDelivered = isDelivered;
+    }
 }

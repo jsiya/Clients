@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Clients.UserControls
+namespace Clients.UserControls 
 {
     /// <summary>
     /// Interaction logic for TextBox1.xaml
@@ -36,6 +36,18 @@ namespace Clients.UserControls
                 tbPlaceholder.Text = _placeholder;
             }
         }
+        private string _text;
+
+        public string UserInput
+        {
+            get { return _text; }
+            set
+            {
+                _text = value;
+                txtInput.Text = _text;
+            }
+        }
+
 
 
         private void txtInput_TextChanged(object sender, TextChangedEventArgs e)

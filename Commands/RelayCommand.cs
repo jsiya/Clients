@@ -3,7 +3,7 @@ using System;
 
 namespace Clients.Commands;
 
-public class RelayCommand
+public class RelayCommand: ICommand
 {
     public event EventHandler? CanExecuteChanged
     {

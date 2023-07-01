@@ -11,26 +11,49 @@ public class ClientsDB: IRepository<Client>
 
     public void Add(Client entity)
     {
-        throw new NotImplementedException();
+        Clients.Add(entity);
     }
 
     public Client? Get(Func<Client, bool> predicate)
     {
-        throw new NotImplementedException();
+        foreach (Client client in Clients)
+        {
+            if (predicate(client))  return client;
+        }
+        return null;
     }
 
     public IList<Client>? GetList(Func<Client, bool>? predicate = null)
     {
-        throw new NotImplementedException();
+        if(predicate == null) return Clients;
+        IList<Client>? list = new List<Client>();
+        foreach (Client client in Clients)
+        {
+            if(predicate(client)) list.Add(client);
+        }
+        return list;
     }
 
     public void Remove(Client entity)
     {
-        throw new NotImplementedException();
+        Clients.Remove(entity);
     }
 
     public void Update(Client entity)
     {
-        throw new NotImplementedException();
+        foreach(Client client in Clients)
+        {
+            if(client.Id == entity.Id)
+            {
+                client.Name = entity.Name;
+                client.Surname = entity.Surname;
+                client.Phone = entity.Phone;
+                client.About = entity.About;
+                client.Place = entity.Place;
+                client.Company = entity.Company;
+                client.UndeliveredOrderCount = entity.UndeliveredOrderCount;
+                return;
+            }
+        }
     }
 }

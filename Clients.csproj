@@ -11,6 +11,7 @@
     <None Remove="StaticFiles\Fonts\SulphurPoint-Bold.ttf" />
     <None Remove="StaticFiles\Fonts\SulphurPoint-Light.ttf" />
     <None Remove="StaticFiles\Fonts\SulphurPoint-Regular.ttf" />
+    <None Remove="StaticFiles\Images\building.png" />
     <None Remove="StaticFiles\Images\LogoClientsLogo.png" />
   </ItemGroup>
 
@@ -26,6 +27,7 @@
     <Resource Include="StaticFiles\Fonts\SulphurPoint-Bold.ttf" />
     <Resource Include="StaticFiles\Fonts\SulphurPoint-Light.ttf" />
     <Resource Include="StaticFiles\Fonts\SulphurPoint-Regular.ttf" />
+    <Resource Include="StaticFiles\Images\building.png" />
     <Resource Include="StaticFiles\Images\LogoClientsLogo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

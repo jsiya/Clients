@@ -12,5 +12,16 @@ public class Client
     public string Place { get; set; }
     public string About { get; set; }
     public int UndeliveredOrderCount { get; set; }
-
+    public Client() { }
+    public Client(Guid id, string name, string surname, string phone, string company, string place, string about, int undeliveredOrderCount)
+    {
+        Id = id;
+        Name = name;
+        Surname = surname;
+        Phone = phone;
+        Company = company;
+        Place = place;
+        About = about;
+        UndeliveredOrderCount = undeliveredOrderCount;
+    }
 }

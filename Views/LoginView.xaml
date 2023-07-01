@@ -19,7 +19,7 @@
         </Grid>
         <Grid Grid.Row="1">
             <TextBlock Text="username" FontSize="19.2" Margin="101 ,19.4, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Left" />
-            <userControls:TextBox1 Height="48.2" Width="268" Margin="10, 50" HorizontalAlignment="Left" Placeholder="enter your username"/>
+            <userControls:TextBox1 Height="48.2" Width="268" Margin="10, 50" HorizontalAlignment="Left" Placeholder="enter your username" />
         </Grid>
         <Grid Grid.Row="2">
             <TextBlock Text="password" FontSize="19.2" Margin="101 ,19.4, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Left" />

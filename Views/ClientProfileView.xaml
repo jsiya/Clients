@@ -26,10 +26,10 @@
         <Grid Grid.Row="1">
             <TextBlock Text="Yunis Memmedov" FontSize="14.4" FontWeight="DemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10"/>
             <fa:FontAwesome Icon="Pencil" VerticalAlignment="Top" HorizontalAlignment="Right" Foreground="#01133D" Margin="0,10,10,0"/>
-            <fa:FontAwesome Icon="Building" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40" Foreground="#01133D"/>
+            <Image Source="\StaticFiles\Images\building.png" Height="15" Width="11"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0"/>
             <TextBlock Text="Indigo" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,38,0,0"/>
             <TextBlock Text="Came from:" FontSize="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,68,0,0"/>
-            <fa:FontAwesome Icon="Instagram" Foreground="#01133D" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="80, 72,0,0"/>
+            <fa:FontAwesome Icon="Instagram" Foreground="#01133D" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="82,70,0,0"/>
             <fa:FontAwesome Icon="Phone" Height="15" Width="13" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#01133D" FontWeight="DemiBold" Margin="139,41,0,0" RenderTransformOrigin="0.402,0.514">
                 <fa:FontAwesome.RenderTransform>
                     <TransformGroup>
@@ -45,13 +45,15 @@
             <TextBlock Text="16.09.21" FontSize="13" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="210,68,0,0"/>
         </Grid>
         <Grid Grid.Row="2">
-            <ItemsControl VerticalAlignment="Top" HorizontalAlignment="Center">
-                <ItemsControl.Template>
-                    <ControlTemplate>
-                        <userControls:OrderInfoCard/>
-                    </ControlTemplate>
-                </ItemsControl.Template>
-            </ItemsControl>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <ItemsControl VerticalAlignment="Top" HorizontalAlignment="Center">
+                    <ItemsControl.Template>
+                        <ControlTemplate>
+                            <userControls:OrderInfoCard/>
+                        </ControlTemplate>
+                    </ItemsControl.Template>
+                </ItemsControl>
+            </ScrollViewer>
             <Button Style="{DynamicResource BtnStyle}" Height="48.2" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10,50">
                 <Button.Content>
                     <Grid Width="45" Height="48">
