@@ -1,31 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Clients.ViewModels;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace Clients.UserControls 
+namespace Clients.UserControls
 {
     /// <summary>
     /// Interaction logic for TextBox1.xaml
     /// </summary>
-    public partial class TextBox1 : UserControl
+    public partial class TextBox1 : UserControl, INotifyPropertyChanged
     {
         public TextBox1()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
         private string _placeholder;
+
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         public string Placeholder
         {
@@ -33,28 +27,19 @@ namespace Clients.UserControls
             set 
             { 
                 _placeholder = value;
-                tbPlaceholder.Text = _placeholder;
+                OnPropertyChanged();
             }
         }
-        private string _text;
-
-        public string UserInput
-        {
-            get { return _text; }
-            set
-            {
-                _text = value;
-                txtInput.Text = _text;
-            }
-        }
-
-
 
         private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (string.IsNullOrEmpty(txtInput.Text))
                 tbPlaceholder.Visibility = Visibility.Visible;
             else tbPlaceholder.Visibility = Visibility.Hidden;
+        }
+        private void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

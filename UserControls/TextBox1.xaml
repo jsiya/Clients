@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="48.2" d:DesignWidth="268">
     <Grid Background="White">
-        <TextBox x:Name="txtInput" VerticalContentAlignment="Center"
+        <TextBox x:Name="txtInput" VerticalContentAlignment="Center" Text="{Binding Text}"
                  FontSize="9.6" FontWeight="Light" BorderThickness="0" Background="Transparent" TextChanged="txtInput_TextChanged"/>
         <TextBlock x:Name="tbPlaceholder" Text="{Binding Placeholder}" FontSize="9.6" FontWeight="Light"
                     VerticalAlignment="Center" HorizontalAlignment="Center" Panel.ZIndex="-1">
