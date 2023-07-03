@@ -75,13 +75,6 @@ public class MainViewModel : INotifyPropertyChanged
                 SelectedUser = user;
             }
         }
-        //JsonSerializerOptions options = new JsonSerializerOptions();
-        //options.WriteIndented = true;
-        //if (Users != null)
-        //{
-        //    string folderPath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "SourceDataFiles", "Orders.json");
-        //    File.WriteAllText(folderPath, JsonSerializer.Serialize(Users, options));
-        //}
     }
     private void OnPropertyChanged([CallerMemberName]  string? propertyName = null)
     {
