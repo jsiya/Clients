@@ -1,13 +1,20 @@
 ﻿using Clients.Models;
+using Clients.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 
 namespace Clients.DB;
 
 public class OrdersDB: IRepository<Order>
 {
     public ObservableCollection<Order> Orders { get; set; }
+    public OrdersDB()
+    {
+        string folderPath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "SourceDataFiles", "Orders.json");
+        Orders = JsonManager<Order>.Deserializer(folderPath, Orders);
+    }
 
     public void Add(Order entity)
     {

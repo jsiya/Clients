@@ -1,28 +1,65 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace Clients.UserControls
+namespace Clients.UserControls;
+
+/// <summary>
+/// Interaction logic for ClientInfoCard.xaml
+/// </summary>
+public partial class ClientInfoCard : UserControl
 {
-    /// <summary>
-    /// Interaction logic for ClientInfoCard.xaml
-    /// </summary>
-    public partial class ClientInfoCard : UserControl
+    public string Name
     {
-        public ClientInfoCard()
-        {
-            InitializeComponent();
-        }
+        get { return (string)GetValue(NameProperty); }
+        set { SetValue(NameProperty, value); }
+    }
+
+    // Using a DependencyProperty as the backing store for Name.  This enables animation, styling, binding, etc...
+    public static readonly DependencyProperty NameProperty =
+        DependencyProperty.Register("Name", typeof(string), typeof(ClientInfoCard));
+
+    public string Company
+    {
+        get { return (string)GetValue(CompanyProperty); }
+        set { SetValue(CompanyProperty, value); }
+    }
+
+    // Using a DependencyProperty as the backing store for Name.  This enables animation, styling, binding, etc...
+    public static readonly DependencyProperty CompanyProperty =
+        DependencyProperty.Register("Company", typeof(string), typeof(ClientInfoCard));
+
+    public string Phone
+    {
+        get { return (string)GetValue(PhoneProperty); }
+        set { SetValue(PhoneProperty, value); }
+    }
+
+    // Using a DependencyProperty as the backing store for Name.  This enables animation, styling, binding, etc...
+    public static readonly DependencyProperty PhoneProperty =
+        DependencyProperty.Register("Phone", typeof(string), typeof(ClientInfoCard));
+
+    public string Order
+    {
+        get { return (string)GetValue(OrderProperty); }
+        set { SetValue(OrderProperty, value); }
+    }
+
+    // Using a DependencyProperty as the backing store for Name.  This enables animation, styling, binding, etc...
+    public static readonly DependencyProperty OrderProperty =
+        DependencyProperty.Register("Order", typeof(string), typeof(ClientInfoCard));
+
+    public string UndeliveredOrderCount
+    {
+        get { return (string)GetValue(UndeliveredOrderCountProperty); }
+        set { SetValue(UndeliveredOrderCountProperty, value); }
+    }
+
+    // Using a DependencyProperty as the backing store for Name.  This enables animation, styling, binding, etc...
+    public static readonly DependencyProperty UndeliveredOrderCountProperty =
+        DependencyProperty.Register("UndeliveredOrderCount", typeof(string), typeof(ClientInfoCard));
+
+    public ClientInfoCard()
+    {
+        InitializeComponent();
     }
 }

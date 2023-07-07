@@ -2,14 +2,10 @@
 using Clients.DB;
 using Clients.Models;
 using Clients.UserControls;
-using System;
+using Clients.Views;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.IO;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text.Json;
-using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 
 namespace Clients.ViewModels;
@@ -73,8 +69,13 @@ public class MainViewModel : INotifyPropertyChanged
             if (user.Username == TextBoxUsername.UserInput && user.Password == TextBoxPassword.UserInput)
             {
                 SelectedUser = user;
+                HomeView homeView = new HomeView();
+                homeView.DataContext = new HomeViewModel(SelectedUser);
+                homeView.ShowDialog();
+                
             }
         }
+        
     }
     private void OnPropertyChanged([CallerMemberName]  string? propertyName = null)
     {

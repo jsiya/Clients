@@ -22,21 +22,21 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
-                        <TextBlock Text="Yunis Memmedov" Margin="7,0"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14.4" FontWeight="DemiBold"/>
+                        <TextBlock Text="{Binding Name}" Margin="7,0"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14.4" FontWeight="DemiBold"/>
                     </Grid>
                     <Grid Grid.Row="1">
-                        <TextBlock Text="Indigo" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
+                        <TextBlock Text="{Binding Company}" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
                     </Grid>
                     <Grid Grid.Row="2">
-                        <TextBlock Text="+994 55 555 55 55" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
+                        <TextBlock Text="{Binding Phone}" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
                     </Grid>
                     <Grid Grid.Row="3">
-                        <TextBlock Text="A4, A5 akrill toplu sifarish" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
+                        <TextBlock Text="{Binding Order}" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
                     </Grid>
                 </Grid>
                 <Grid Grid.Column="1">
                     <Border Background="#3476E4" Width="11" Height="11" CornerRadius="6" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30,9">
-                        <TextBlock Text="2" FontFamily="Stylish" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                        <TextBlock Text="{Binding UndeliveredOrderCount}" FontFamily="Stylish" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                     </Border>
                     <fa:FontAwesome VerticalAlignment="Top" HorizontalAlignment="Right" Margin="11,8" Icon="Instagram" Foreground="#01133D"/>
                     <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,7" Width="84.6" Height="24.8">

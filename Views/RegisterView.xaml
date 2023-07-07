@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Clients.Views"
         xmlns:userControls="clr-namespace:Clients.UserControls"
         mc:Ignorable="d"
-        Title="AllClientsView"  Height="660" Width="288" MinWidth="288" MaxWidth="288" MinHeight="660" MaxHeight="660">
+        Title="AllClientsView"  Height="660" Width="288" MinWidth="288" MaxWidth="288" MinHeight="660" MaxHeight="660"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#F4F8FB">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -32,27 +33,32 @@
         <Grid Grid.Row="1">
             <TextBlock  Text="Name" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4"/>
-            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="What is the name of the client?"/>
+            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0"
+                                    DataContext="{Binding NameTextBox, Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Row="2">
             <TextBlock  Text="Surname" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4" />
-            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="What is the surname of the client?"/>
+            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0"
+                                    DataContext="{Binding SurnameTextBox, Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Row="3">
             <TextBlock  Text="Number" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4" />
-            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="What is the phone number of the client?"/>
+            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0"
+                                    DataContext="{Binding PhoneTextBox, Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Row="4">
             <TextBlock  Text="Company" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4"/>
-            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Which company does the person belong to?"/>
+            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0"
+                                    DataContext="{Binding CompanyTextBox, Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Row="5">
             <TextBlock  Text="Place" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4" />
-            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Where did he/she found me?"/>
+            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0"
+                                    DataContext="{Binding PlaceTextBox, Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Row="6">
             <Grid.RowDefinitions>
@@ -70,23 +76,27 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
-                    <userControls:TextBox1 Height="48" Width="84.4" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Day"/>
+                    <userControls:TextBox1 Height="48" Width="84.4" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" 
+                                           DataContext="{Binding DayTextBox, Mode=TwoWay}"/>
                 </Grid>
                 <Grid Grid.Column="1">
-                    <userControls:TextBox1 Height="48" Width="84.4" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Month"/>
+                    <userControls:TextBox1 Height="48" Width="84.4" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" 
+                                           DataContext="{Binding MonthTextBox, Mode=TwoWay}"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <userControls:TextBox1 Height="48" Width="84.4" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Year"/>
+                    <userControls:TextBox1 Height="48" Width="84.4" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0"
+                                           DataContext="{Binding YearTextBox, Mode=TwoWay}"/>
                 </Grid>
             </Grid>
         </Grid>
         <Grid Grid.Row="7">
             <TextBlock  Text="How do I know him/her" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10, 1"
                        FontSize="14.4" />
-            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0" Placeholder="Write how do you know him/her"/>
+            <userControls:TextBox1 Height="48" Width="268" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0"
+                                   DataContext="{Binding DescriptionTextBox, Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Row="8">
-            <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Width="268">
+            <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Width="268" Command="{Binding RegisterCommand}">
                 <Button.Content>
                     <TextBlock Text="register" Foreground="white"/>
                 </Button.Content>

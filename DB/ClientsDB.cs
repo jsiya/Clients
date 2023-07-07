@@ -1,13 +1,21 @@
 ﻿using Clients.Models;
+using Clients.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
+using System.Text.Json;
 
 namespace Clients.DB;
 
 public class ClientsDB: IRepository<Client>
 {
     public ObservableCollection<Client> Clients { get; set; }
+    public ClientsDB()
+    {
+        string folderPath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "SourceDataFiles", "Clients.json");
+        Clients = JsonManager<Client>.Deserializer(folderPath, Clients);
+    }
 
     public void Add(Client entity)
     {
@@ -56,4 +64,5 @@ public class ClientsDB: IRepository<Client>
             }
         }
     }
+    
 }

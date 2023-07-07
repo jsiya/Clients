@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Clients.Views"
         xmlns:userControls="clr-namespace:Clients.UserControls"
         mc:Ignorable="d"
-        Title="NewOrderView" Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592">
+        Title="NewOrderView" Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#F4F8FB">
         <Grid.RowDefinitions>
             <RowDefinition Height="39"/>

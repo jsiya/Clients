@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clients.Views"
         mc:Ignorable="d"
-        Title="HomeView"  Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592">
+        Title="HomeView"  Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#F4F8FB">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -18,14 +19,14 @@
             <TextBlock Text="Welcome Tunar!" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="14.4" Margin="71" Foreground="#3476E4"/>
         </Grid>
         <Grid Grid.Row="1">
-            <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="144" Width="268" FontSize="28.8" Margin="10">
+            <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="144" Width="268" FontSize="28.8" Margin="10" Command="{Binding CreateClientCommand}">
                 <Button.Content>
                     <TextBlock Foreground="White" Text="create new client"/>
                 </Button.Content>
             </Button>
         </Grid>
         <Grid Grid.Row="2">
-            <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="144" Width="268" FontSize="28.8" Margin="10">
+            <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" Height="144" Width="268" FontSize="28.8" Margin="10" Command="{Binding AllClientsCommand}">
                 <Button.Content>
                     <TextBlock Foreground="White" Text="all client" />
                 </Button.Content>

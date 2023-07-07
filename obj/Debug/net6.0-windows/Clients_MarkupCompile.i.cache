@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Siya\source\repos\Clients\App.xaml
 10917493640
 
-22-333549484
+271464613870
 195130251315
 ResourceDictionaries\Styles.xaml;UserControls\ClientInfoCard.xaml;UserControls\OrderInfoCard.xaml;UserControls\TextBox1.xaml;Views\AllClients.xaml;Views\ClientProfileView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\NewOrderView.xaml;Views\RegisterView.xaml;
 
-True
+False
 

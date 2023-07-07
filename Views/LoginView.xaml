@@ -7,7 +7,9 @@
         xmlns:userControls="clr-namespace:Clients.UserControls"
         xmlns:viewModels="clr-namespace:Clients.ViewModels"
         mc:Ignorable="d"
-        Title="LoginView" Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592">
+        Title="LoginView" Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592" 
+        x:Name="LoginPage"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#F4F8FB">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -21,7 +23,7 @@
         <Grid Grid.Row="1">
             
             <TextBlock Text="username" FontSize="19.2" Margin="101 ,19.4, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Left" />
-            <userControls:TextBox1 Height="48.2" Width="268" Margin="10, 50" HorizontalAlignment="Left"
+            <userControls:TextBox1 Height="48.2" Width="268" Margin="10, 50" HorizontalAlignment="Left" 
                          DataContext="{Binding TextBoxUsername, Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Row="2">

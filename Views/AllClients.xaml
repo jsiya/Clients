@@ -7,7 +7,8 @@
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         xmlns:userControls="clr-namespace:Clients.UserControls"
         mc:Ignorable="d"
-        Title="AllClients" Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592">
+        Title="AllClients" Height="592" Width="288" MinWidth="288" MaxWidth="288" MinHeight="592" MaxHeight="592"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#F4F8FB">
         <Grid.RowDefinitions>
             <RowDefinition Height="39"/>

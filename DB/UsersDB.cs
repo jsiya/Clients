@@ -1,6 +1,9 @@
 ﻿using Clients.Models;
+using Clients.Services;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 
 namespace Clients.DB;
 
@@ -10,9 +13,7 @@ public class UsersDB
 
     public UsersDB()
     {
-        Users = new() {
-            new User(Guid.NewGuid(), "siya", "salam123"),
-            new User(Guid.NewGuid(), "hesen", "salam1234")
-        };
+        string folderPath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "SourceDataFiles", "Users.json");
+        Users = JsonManager<User>.Deserializer(folderPath, Users);
     }
 }
