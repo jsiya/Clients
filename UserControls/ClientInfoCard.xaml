@@ -6,46 +6,45 @@
              xmlns:local="clr-namespace:Clients.UserControls"
              xmlns:fa="http://schemas.fontawesome.io/icons/"
              mc:Ignorable="d" 
-             d:DesignHeight="120" d:DesignWidth="290">
-    <Grid>
-        <Border Margin="5" CornerRadius="2" Background="#FFFFFF" Width="268" Height="93.4">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1.7*"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Row="0">
-                        <TextBlock Text="{Binding Name}" Margin="7,0"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14.4" FontWeight="DemiBold"/>
-                    </Grid>
-                    <Grid Grid.Row="1">
-                        <TextBlock Text="{Binding Company}" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
-                    </Grid>
-                    <Grid Grid.Row="2">
-                        <TextBlock Text="{Binding Phone}" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
-                    </Grid>
-                    <Grid Grid.Row="3">
-                        <TextBlock Text="{Binding Order}" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
-                    </Grid>
+             d:DesignHeight="120" d:DesignWidth="290" Name="control">
+
+    <Border Margin="5" CornerRadius="2" Background="#FFFFFF" Width="268" Height="93.4">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.7*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <TextBlock Text="{Binding Fullname, ElementName=control}" Margin="7,0"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14.4" FontWeight="DemiBold"/>
                 </Grid>
-                <Grid Grid.Column="1">
-                    <Border Background="#3476E4" Width="11" Height="11" CornerRadius="6" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30,9">
-                        <TextBlock Text="{Binding UndeliveredOrderCount}" FontFamily="Stylish" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
-                    </Border>
-                    <fa:FontAwesome VerticalAlignment="Top" HorizontalAlignment="Right" Margin="11,8" Icon="Instagram" Foreground="#01133D"/>
-                    <Button Style="{DynamicResource BtnStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,7" Width="84.6" Height="24.8">
-                        <Button.Content>
-                            <TextBlock Text="more" FontSize="9.6" Foreground="White"/>
-                        </Button.Content>
-                    </Button>
+                <Grid Grid.Row="1">
+                    <TextBlock Text="{Binding Company,ElementName=control}" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
+                </Grid>
+                <Grid Grid.Row="2">
+                    <TextBlock Text="{Binding Phone, ElementName=control}" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
+                </Grid>
+                <Grid Grid.Row="3">
+                    <TextBlock Text="{Binding Order, ElementName=control}" Margin="7,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.8" />
                 </Grid>
             </Grid>
-        </Border>
-    </Grid>
+            <Grid Grid.Column="1">
+                <Border Background="#3476E4" Width="11" Height="11" CornerRadius="6" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30,9">
+                    <TextBlock Text="{Binding UndeliveredOrderCount, ElementName=control}" Background="{Binding ElementName=control, Path=Background}" FontFamily="Stylish" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                </Border>
+                <fa:FontAwesome VerticalAlignment="Top" HorizontalAlignment="Right" Margin="11,8" Icon="Instagram" Foreground="#01133D"/>
+                <Button Style="{DynamicResource BtnStyle}" Command="{Binding MoreCommand, ElementName=control}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,7" Width="84.6" Height="24.8">
+                    <Button.Content>
+                        <TextBlock Text="more" FontSize="9.6" Foreground="White"/>
+                    </Button.Content>
+                </Button>
+            </Grid>
+        </Grid>
+    </Border>
 </UserControl>

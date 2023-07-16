@@ -1,5 +1,7 @@
-﻿using System.Windows;
+﻿using Clients.Models;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace Clients.UserControls;
 
@@ -8,15 +10,26 @@ namespace Clients.UserControls;
 /// </summary>
 public partial class ClientInfoCard : UserControl
 {
-    public string Name
+    public ICommand MoreCommand
     {
-        get { return (string)GetValue(NameProperty); }
-        set { SetValue(NameProperty, value); }
+        get { return (ICommand)GetValue(MoreCommandProperty); }
+        set { SetValue(MoreCommandProperty, value); }
+    }
+
+    // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+    public static readonly DependencyProperty MoreCommandProperty =
+        DependencyProperty.Register("MoreCommand", typeof(int), typeof(ClientInfoCard));
+
+
+    public string Fullname
+    {
+        get { return (string)GetValue(FullnameProperty); }
+        set { SetValue(FullnameProperty, value); }
     }
 
     // Using a DependencyProperty as the backing store for Name.  This enables animation, styling, binding, etc...
-    public static readonly DependencyProperty NameProperty =
-        DependencyProperty.Register("Name", typeof(string), typeof(ClientInfoCard));
+    public static readonly DependencyProperty FullnameProperty =
+        DependencyProperty.Register("Fullname", typeof(string), typeof(ClientInfoCard));
 
     public string Company
     {
@@ -57,6 +70,16 @@ public partial class ClientInfoCard : UserControl
     // Using a DependencyProperty as the backing store for Name.  This enables animation, styling, binding, etc...
     public static readonly DependencyProperty UndeliveredOrderCountProperty =
         DependencyProperty.Register("UndeliveredOrderCount", typeof(string), typeof(ClientInfoCard));
+
+    public Client SelectedClient
+    {
+        get { return (Client)GetValue(SelectedClientProperty); }
+        set { SetValue(SelectedClientProperty, value); }
+    }
+
+    // Using a DependencyProperty as the backing store for Name.  This enables animation, styling, binding, etc...
+    public static readonly DependencyProperty SelectedClientProperty =
+        DependencyProperty.Register("SelectedClient", typeof(Client), typeof(ClientInfoCard));
 
     public ClientInfoCard()
     {

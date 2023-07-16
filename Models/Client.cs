@@ -17,6 +17,7 @@ public class Client
     public Client(Guid id, Guid userId, string name, string surname, string phone, string company, string place, string about, int undeliveredOrderCount)
     {
         Id = id;
+        UserId = userId;
         Name = name;
         Surname = surname;
         Phone = phone;

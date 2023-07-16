@@ -24,13 +24,23 @@
             </Button>
         </Grid>
         <Grid Grid.Row="1">
+         
             <ScrollViewer VerticalScrollBarVisibility="Auto">
-                <ItemsControl VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 20">
-                    <ItemsControl.Template>
-                        <ControlTemplate>
-                            <userControls:ClientInfoCard/>
-                        </ControlTemplate>
-                    </ItemsControl.Template>
+                <ItemsControl ItemsSource="{Binding CurrentClients}" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 15">
+                
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <userControls:ClientInfoCard MoreCommand="{Binding RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}, 
+        Path=DataContext.ClientProfileCommand}" Company="{Binding Company}" Phone="{Binding Phone}" UndeliveredOrderCount="{Binding UndeliveredOrderCount}">
+                                <userControls:ClientInfoCard.Fullname>
+                                    <MultiBinding StringFormat=" {0} {1}">
+                                        <Binding Path="Name"/>
+                                        <Binding Path="Surname"/>
+                                    </MultiBinding>
+                                </userControls:ClientInfoCard.Fullname>
+                            </userControls:ClientInfoCard>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
                 </ItemsControl>
             </ScrollViewer>
             
